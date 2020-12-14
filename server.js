@@ -24,6 +24,6 @@ mongoClient.connect(db.url, (err, client) => {
 
   require('./routes')(app, db)
   app.listen(port, () => {
-    console.log('we are live')
+    console.log(`Server is running on port ${port}`)
   })
 })
